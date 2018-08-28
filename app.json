@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/news/news",
+    "pages/weather/weather",
+    "pages/switchcity/switchcity",
+    "pages/map/map",
+    "pages/movies/movies",
+    "pages/movies/movie-detail/movie-detail",
+    "pages/movies/more-movie/more-movie",
+    "pages/about/about",
+    "pages/about/kuaidi/kuaidi",
+    "pages/about/dictionary/dictionary",
+    "pages/about/gzhao/gzhao",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f0f0f0",
+    "navigationBarTitleText": "Clara G",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#f65f7c",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/ico-home.png",
+        "selectedIconPath": "images/icon/ico-home-d.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "攻略",
+        "iconPath": "images/icon/ico-file.png",
+        "selectedIconPath": "images/icon/ico-file-d.png"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "周边",
+        "iconPath": "images/icon/ico-map.png",
+        "selectedIconPath": "images/icon/ico-map-d.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "电影",
+        "iconPath": "images/icon/ico-movie.png",
+        "selectedIconPath": "images/icon/ico-movie-d.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于我",
+        "iconPath": "images/icon/ico-me.png",
+        "selectedIconPath": "images/icon/ico-me-d.png"
+      }
+    ]
+  }
+}

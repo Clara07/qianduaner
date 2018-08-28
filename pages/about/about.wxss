@@ -1,0 +1,140 @@
+.about-headContainer {
+  width: 100%;
+  position: relative;
+}
+
+.about-headImgOne {
+  width: 100%;
+  height: 220px;
+}
+
+.about-headImgOne image {
+  width: 100%;
+  height: 100%;
+}
+
+.about-headImgTwo {
+  position: absolute;
+  left: 40%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  bottom: -16%;
+}
+
+.about-headImgTwo image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.about-infoContainer {
+  width:100%;
+  margin-top:10%;
+  text-align: center;
+}
+
+.about-infoContent {
+}
+
+.about-me {
+  text-align: center
+}
+
+.about-me text {
+  font-size:48rpx;
+color:#333;
+}
+
+.about-meInfo {
+  color:#999;
+letter-spacing:1px;
+text-align: center;
+}
+
+.about-infoTech {
+  text-align:center;
+font-size:24rpx;
+color:#666;
+}
+.about-infoTech-item {
+  padding:5px 12px;
+line-height:30px;
+height:30px;
+display:flex;
+margin-left:82px;
+
+}
+
+.about-infoTech-item icon {
+  width:30px;
+margin-right:0px;
+height:30px;
+display:inline-flex;
+color:#999;
+}
+
+.about-gxContainer {
+}
+
+.about-gxContainer-title {
+  background-image: -webkit-linear-gradient(left, #ee6e78, #e47c92 75%,#cb769a 50%,#bc78a2 25%, #ee6e78 );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+   -webkit-background-size: 200% 100%;
+  -webkit-animation: about-gxContainer-title 4s infinite linear;
+  padding:3px 10px;
+  margin-bottom:8px;
+  font-size:34rpx;
+  letter-spacing:2px;
+}
+ @-webkit-keyframes about-gxContainer-title {
+         0%{ background-position: 0 0;}
+         100% { background-position: -100% 0;}
+ }
+ .about-gxContainer-title::before{
+   content: "●|";
+   color:#ee6e78 !important;
+   font-size: 24rpx;
+   margin-right: 2px;
+
+ }
+.about-gxContainer image {
+  width:100%;
+  height:210px
+}
+
+.about-funcContainer {
+}
+
+.about-funcList {
+  display:flex;
+  flex-direction:row;
+  white-space:nowrap;
+
+}
+
+.about-funcList-item {
+display:inline-flex;
+flex-direction:column;
+border:1px solid #f0f0f0;
+margin:0 8px;
+margin-bottom:10px;
+height:220rpx;
+border-radius:8px;
+color: lightpink
+}
+
+.about-funcList-item icon {
+width:165rpx;
+height:150rpx;
+font-size:56px;
+padding:10rpx 22rpx;
+text-align:center;
+}
+
+.about-funcList-item text {
+  font-size:28rpx;
+text-align:center;
+color: lightpink
+}

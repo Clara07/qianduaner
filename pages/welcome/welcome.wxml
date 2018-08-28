@@ -1,0 +1,12 @@
+<view class='wrap'>
+  <image class='welcomeImg' src='../../images/welcomeIndex.png' />
+  <text class='h3 fixedText fixedShadowText'>welcome  to enjoy your own life</text>
+  <button class='wxBtn wxBtn-transparent fixedBtn' bindtap='clickGo'>let's go</button>
+  <view class='userinfo' style='position:absolute;'>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">show your msg </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>

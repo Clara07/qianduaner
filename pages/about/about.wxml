@@ -1,0 +1,60 @@
+<view class='about-headContainer'>
+    <view class='about-headImgOne'>
+    <image src='../../images/bg/aboutBg1.jpg'></image>
+    </view>
+    <view class='about-headImgTwo'>
+      <image src='../../images/bg/claraG.jpg'></image>
+    </view>
+</view>
+<!-- 底部信息 -->
+<view class='about-infoContainer'>
+  <view class='about-infoContent'>
+      <view class='about-me'>
+        <text>ClaraG</text>
+      </view>
+      <text class='about-meInfo'>真正的大师永远怀着一颗学徒的心</text>
+      <view class='about-infoTech'>
+        <view class='about-infoTech-item'>
+          <icon class='iconfont icon-gitee' size='35' style="color:#ec8329"></icon>
+          https://gitee.com/claraPro
+        </view>
+        <view class='about-infoTech-item'>
+          <icon class='iconfont icon-github' size='35' style="color:#333;"></icon>
+          https://github.com/Clara07
+        </view>
+        <view  class='about-infoTech-item'>
+          <icon class='iconfont icon-csdn' size='35' style="color:red;"></icon>
+          https://blog.csdn.net/Clara_G
+        </view>
+      </view>
+  </view>
+</view>
+<!-- 个性标签 -->
+<view class='about-gxContainer'>
+  <view class='about-gxContainer-title'>个性标签</view>
+  <image src='../../images/bg/aboutGx.jpg'></image>
+</view>
+<!-- 功能区 -->
+<view class='about-funcContainer'>
+  <view class='about-gxContainer-title'>
+    功能区
+  </view>
+  <block>
+    <view class='about-funcList'>
+        <scroll-view scroll-x="true" style='width:100%;'>
+          <view  class='about-funcList-item'  catchtap="onKuaidiTap">
+            <icon class='iconfont icon-kuaidi'></icon>
+            <text>快递</text>
+          </view>
+          <view  class='about-funcList-item' catchtap="onDictionaryTap">
+            <icon class='iconfont icon-dictionary02'></icon>
+            <text>字典</text>
+          </view>
+          <view class='about-funcList-item' catchtap="onMoreTap">
+            <icon class='iconfont icon-more'></icon>
+            <text>关注公众号</text>
+          </view>
+        </scroll-view>
+    </view>
+  </block>
+</view>

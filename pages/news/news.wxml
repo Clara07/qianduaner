@@ -1,0 +1,89 @@
+
+<view class='ggwx-newsTab'>
+  <view class="ggwx-newsTabBlock {{selectedState[0]?'ggwx-newsTabSelected':''}}" bindtap='clickTop'>
+    <view class='ggwx-newsTabText'>热点</view>
+  </view>
+   <view class="ggwx-newsTabBlock {{selectedState[1]?'ggwx-newsTabSelected':''}}" bindtap='clickFashion'>
+    <view class='ggwx-newsTabText'>时尚</view>
+  </view>
+   <view class="ggwx-newsTabBlock {{selectedState[2]?'ggwx-newsTabSelected':''}}" bindtap='clickTech'>
+    <view class='ggwx-newsTabText'>科技</view>
+  </view>
+   <view class="ggwx-newsTabBlock {{selectedState[3]?'ggwx-newsTabSelected':''}}" bindtap='clickEcon'>
+    <view class='ggwx-newsTabText'>财经</view>
+  </view>
+   <view class="ggwx-newsTabBlock {{selectedState[4]?'ggwx-newsTabSelected':''}}" bindtap='clickSport'>
+    <view class='ggwx-newsTabText'>体育</view>
+  </view>
+</view>
+<!--  src="{{isSunnyDay?'../../images/sunnyday.jpg':'../../images/overcastday.jpg'}}" -->
+<view class='ggwx-weather-container'>
+  <image class="bgImage" src="{{isSunnyDay?'../../images/sunnyday.jpg':'../../images/overcastday.jpg'}}"/>
+  <view class="ggwx-weatherwrap">
+    <view class='ggwx-weatherwrap-top'>
+      <view class="ggwx-changeCity" bindtap="jumpChangeCity">
+        <image src='../../images/icon/ico-changeLoc.png' />
+        <text>切换城市</text>
+      </view>
+      <view class='ggwx-futureWeather' bindtap="jumpFutureWeather">
+        <text>未来三天天气 ></text>
+      </view>
+    </view>
+    <view class='ggwx-weatherwrap-content'>
+      <view class="ggwx-info">
+        <!--实时温度-->
+        <view class="ggwx-temp">
+        <!-- 实时位置时间 -->
+        <view class="ggwx-city">
+          <view>
+           {{today}}
+          </view>
+          <view style='width:143px;word-break:break-all;'>{{location}}{{county}}
+          </view>
+        
+        </view>
+          <text style='font-size:22rpx;color:#fff;letter-spacing:2px;'>实时天气</text>
+          <view style='font-size:28px;font-weight:bold'>{{weatherData.tmp}}
+            <text style='color:#fff;font-size:30rpx;'>℃</text>
+          </view>
+          <view style="position: absolute;color: 28rpx;right: 22%;top: 15%;height: 45px;padding: 12px 0px;width:auto;">
+            <text style="font-size: 28px;color: #fff;font-weight: 200;">/</text>
+            <text style="color: #fff;font-size: 28rpx;letter-space:1px;">{{totalweatherData.tmp_min}}℃-{{totalweatherData.tmp_max}}℃</text>
+          </view>
+          <!-- 空气质量 -->
+          <view class='ggwx-weather-detailBtn'>{{air.qlty}}</view>
+        </view>
+        <!--其他描述-->
+        <view class="ggwx-weather">
+          <!-- 天气情况 -->
+          <view class='ggwx-weather-detail'>
+          {{weatherData.cond_txt}}
+          </view>
+          <!-- 风向 -->
+          <view class='ggwx-weather-detail'>{{weatherData.wind_dir}}{{weatherData.wind_sc}}级</view>
+          <!-- 湿度 -->
+          <view class='ggwx-weather-detail'>湿度:{{weatherData.hum}}</view>
+        </view>
+      </view>
+
+    </view>
+
+  </view>
+</view>
+<view class='ggwx-container news-list'>
+  <block wx:for="{{topNews}}" wx:key="key">
+    <view class='ggwx-news-container' bindtap='hrefToLink'>
+      <view class='ggwx-news-item' data-title="{{item.title}}" data-url="{{item.url}}"></view>
+      <view class='ggwx-news-image'>
+        <image src="{{item.thumbnail_pic_s}}" mode='aspectFill' />
+      </view>
+      <view class='ggwx-news-text'>
+        <text class='ggwx-news-title'>{{item.title}}</text>
+        <view class='ggwx-news-stamp'>
+          <text class='ggwx-news-stamp-span'>{{item.author_name}}</text>
+          <text class='ggwx-news-stamp-span'>{{item.date}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

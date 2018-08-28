@@ -1,0 +1,23 @@
+
+<view class="container">
+<!-- 选择框 -->
+   <view class='select_box'>
+      <view class='select' catchtap='selectTap'>
+          <text class='select_text'>{{kdname}}</text>
+          <image class='select_img {{show&&"select_img_rotate"}}' src='../../../images/icon/icon-up.png'></image>
+      </view>
+      <view class='option_box' style='height:{{show?400:0}}rpx;'>
+          <text class='option' style='{{index==arry.length-1&&"border:0;"}}'
+           wx:for='{{selectData}}' wx:for-index="key"  wx:for-item="value" data-key="{{key}}" data-value="{{value}}"  catchtap='optionTap'>
+           {{key}}</text>
+      </view>
+  </view>
+  <input placeholder="请输入快递单号" focus="true" bindinput="input" />
+  <button class='gg-btn gg-btn-red' bindtap="btnClick"> 查询 </button> 
+</view>
+<view class="expressinfo" wx:for="{{expressInfo}}">
+  <ul>
+   <li>{{item.context}}</li>
+   <li>{{item.time}}</li> 
+  </ul> 
+</view>

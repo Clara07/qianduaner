@@ -1,0 +1,33 @@
+<view style='height:240px;'>
+  <swiper indicator-dots="true" autoplay='true' interval="5000" circular="true" style='height:240px;'>
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" style='width:100%;height:100%;' />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class='ggwx-container news-list'>
+  <view class='ggwx-indexspan'>
+    <text class='ggwx-indexspan-title'>科技热点</text>
+    <view class="ggwx-more" bindtap="jumpToNews">
+      <text>更多>></text>
+    </view>
+  </view>
+
+  <block wx:for="{{kejiNews}}" wx:key="key">
+    <view class='ggwx-news-container' bindtap='hrefToLink' data-title="{{item.title}}" data-url="{{item.url}}">
+      <view class='ggwx-news-image'>
+        <image src="{{item.thumbnail_pic_s}}" mode='aspectFill' />
+      </view>
+      <view class='ggwx-news-text'>
+        <text class='ggwx-news-title'>{{item.title}}</text>
+        <view class='ggwx-news-stamp'>
+          <text class='ggwx-news-stamp-span'>{{item.author_name}}</text>
+          <text class='ggwx-news-stamp-span'>{{item.date}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

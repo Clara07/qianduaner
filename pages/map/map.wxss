@@ -1,0 +1,139 @@
+page {
+  height: 100%;
+}
+
+.ggwx-map {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.ggwx-map-input {
+  position: fixed;
+  top: 10px;
+  width: 90%;
+  padding: 0rpx 15rpx;
+  height: 40px;
+  background-color: #fff;
+  z-index: 999;
+  border-radius: 8px;
+  margin: 0 10px;
+  font-size: 26rpx;
+  display: flex;
+}
+
+.ggwx-map-input image {
+  position: relative;
+  width: 20px;
+  height: 17px;
+  margin-top: 12px;
+}
+
+.ggwx-map-input input {
+  height: 100%;
+  font-size: 24rpx;
+  vertical-align: middle;
+  line-height: 30px;
+  width: 100%;
+  margin-left: 12px;
+}
+
+.ggwx-map-searchBtnGroup {
+  position: fixed;
+  display: inline-block;
+  z-index: 10000;
+  top: 54px;
+  font-size: 24rpx;
+  text-align: center;
+  width: 100%;
+}
+
+.ggwx-map-searchBtnGroup button {
+  z-index: 10000;
+  font-size: 12px;
+  text-align: center;
+  display: inline-block;
+  line-height: 26px;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.ggwx-map-btn {
+  background-color: #fff !important;
+  color: #f8899d !important;
+  border: 1px solid #f8899d !important;
+}
+
+.ggwx-map-btnA {
+  background-color: #f8899d !important;
+  color: #fff !important;
+  border: 1px solid #f8899d !important;
+}
+
+.ggwx-map-container {
+  height: 450px;
+  width: 100%;
+  position: absolute;
+  top: 96px;
+}
+
+.ggwx-map-container .map {
+  height: 100%;
+  width: 100%;
+}
+
+.ggwx-place-info {
+  position: absolute;
+  width: 92%;
+  height: 90px;
+  bottom: 0px;
+  padding: 0 5px;
+  background-color: #fff;
+  margin: 0 12px;
+  border-radius: 8px;
+}
+
+.showIt {
+  display: block;
+}
+
+.hideIt {
+  display: none;
+}
+
+.ggwx-place-info .ggwx-place-title {
+  font-size: 30rpx;
+  font-weight: bold;
+  letter-spacing: 4rpx;
+  color: #666;
+}
+
+.ggwx-place-info .ggwx-place-address {
+  color: #777;
+  letter-spacing: 1px;
+}
+
+.ggwx-place-info .ggwx-place-tel {
+  color: #777;
+  letter-spacing: 1px;
+}
+
+.sugDataInfo {
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  top: 34px;
+  font-size: 14px;
+  z-index: 100010 !important;
+  margin: 15px 0px;
+  padding: 0px 20px;
+  border-radius: 8px;
+}
+
+.sugDataInfoDetail {
+  position: relative;
+  line-height: 30px;
+  color: #666;
+  letter-spacing: 1px;
+  font-weight: bold;
+}

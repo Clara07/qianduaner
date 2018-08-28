@@ -1,0 +1,151 @@
+.ggwx-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 30rpx;
+}
+
+.ggwx-weatherContainer {
+  height: 100%;
+}
+
+.ggwx-weatherContainer .ggwx-currentWeather {
+  width: 100%;
+  height: 400rpx;
+  padding: 20rpx;
+  font-size: 24rpx;
+  color: #f0f9fd;
+}
+
+.ggwx-weatherContainer .ggwx-currentWeather view {
+  margin-bottom: 17rpx;
+  letter-spacing: 1px;
+}
+
+.ggwx-temp {
+  font-size: 70rpx;
+  letter-spacing: 0px !important;
+  position: relative;
+}
+
+.ggwx-temp text {
+  position: absolute;
+  top: 13%;
+  left: 12%;
+  color: #fff;
+  font-weight: bold;
+}
+
+.ggwx-location {
+  margin-top: -5rpx;
+}
+
+.ggwx-type {
+}
+
+.ggwx-pm2 {
+}
+
+.ggwx-currentInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 195rpx;
+  font-size: 30rpx;
+  color: #f0f9fd;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.ggwx-currentInfo .ggwx-currentInfoItem {
+  border-right: 1px solid;
+  padding-right: 68rpx;
+  text-align: center;
+}
+
+.ggwx-currentInfo .ggwx-currentInfoItem .ggwx-itemTitle {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.ggwx-currentInfo .ggwx-currentInfoItem .ggwx-itemcontent {
+}
+
+.wind {
+}
+
+.humidity {
+}
+
+.apparentTemp {
+  border: none !important;
+  padding: 0 !important;
+}
+
+.ggwx-forcastWeather {
+  margin-top:0px;
+}
+
+.ggwx-forcastWeather block {
+}
+
+.ggwx-forcastWeatherItem {
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-around;
+  height:115rpx;
+  font-size:14px;
+  padding:8px 0px;
+  color:#666;
+  border-top:1px solid #d9d9d9;
+}
+.ggwx-forcastWeatherItem:last-child{
+   border-bottom:1px solid #d9d9d9;
+}
+
+.ggwx-forcastDay {
+}
+
+.ggwx-forcastType {
+  display: flex;
+}
+.ggwx-forcastType view{
+  margin-top:6px
+}
+
+.typeImage {
+  width:30px;
+height:30px;
+padding-right: 5px;
+}
+
+.ggwx-forcastMax {
+  letter-spacing:2px;
+}
+
+.ggwx-currentDress {
+  font-size:24rpx;
+margin-top:28rpx;
+color:#666;
+box-shadow:0px 0px 8px #e8e8e8;
+height:160rpx;
+}
+.ggwx-currentDressTitle{
+  font-size:26rpx;
+letter-spacing:2px;
+border-bottom:1px solid #d9d9d9;
+background-color:#eee;
+height:32rpx;
+padding:15rpx 23rpx;
+}
+.ggwx-currentDressContent{
+padding:12rpx 23rpx;
+letter-spacing:1px;
+}

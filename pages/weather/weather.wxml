@@ -1,0 +1,55 @@
+<view>
+<image src="../../images/bg/bg-weather.jpg" mode="scaleToFill" style="width:100%;height:630rpx;"></image>
+</view>
+<view class="ggwx-wrapper">
+  <view class="ggwx-weatherContainer">
+    <!-- 当前天气信息 -->
+    <view class="ggwx-currentWeather">
+      <view class='ggwx-temp'>
+      {{now.tmp}}
+      <text>℃</text>
+      </view>
+      <view class='ggwx-location' bindtap='bindCity'>{{city}}{{district}}</view>
+      <view class='ggwx-type'>{{now.cond_txt}} | 空气{{quality.qlty}}</view>
+      <view class='ggwx-pm2'>PM2.5 100</view>
+    </view>
+    <!-- 当前辅助信息 -->
+    <view class='ggwx-currentInfo'>
+      <view class='ggwx-currentInfoItem wind'>
+        <view class='ggwx-itemTitle'>{{now.wind_dir}}</view>
+        <view class='ggwx-itemcontent'>{{now.wind_sc}}级</view>
+      </view>
+      <view class='ggwx-currentInfoItem humidity'>
+        <view class='ggwx-itemTitle'>相对湿度</view>
+        <view class='ggwx-itemcontent'>{{now.hum}}</view>
+      </view>
+      <view class='ggwx-currentInfoItem apparentTemp'>
+        <view class='ggwx-itemTitle'>体感温度</view>
+        <view class='ggwx-itemcontent'>{{now.fl}}℃</view>
+      </view>
+    </view>
+    <!-- 未来几天天气预报-->
+    <view class='ggwx-forcastWeather'>
+      <block wx:for="{{forecast}}"  wx:for-index="index" wx:for-item="fc" wx:key="key">
+        <view class='ggwx-forcastWeatherItem'>
+          <view class='ggwx-forcastDay'>{{showday[index]}}</view>
+          <view class='ggwx-forcastType'>
+            <image class='typeImage'  src="../../images/weather/{{fc.cond_code_d}}.png"></image>
+           <view>{{fc.cond_txt_d}} | {{fc.wind_dir}}{{fc.wind_sc}}级</view>
+          </view>
+          <view class='ggwx-forcastMax'>
+           {{fc.tmp_max}}/ {{fc.tmp_min}}℃
+          </view>
+        </view>
+      </block>
+    </view>
+    <!-- 当前天气生活指数 -->
+    <view class='ggwx-currentDress'>
+      <view class='ggwx-currentDressTitle'>
+      生活指数</view>
+       <view class='ggwx-currentDressContent'>
+        天气{{dress.brf}},{{dress.txt}}
+       </view>
+    </view>
+  </view>
+</view>

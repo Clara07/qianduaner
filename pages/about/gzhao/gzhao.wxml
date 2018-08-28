@@ -1,0 +1,9 @@
+<view>
+  <image src='../../../images/mygzhao.png'style="width:100%;height:84px;"></image>
+    <view style="margin:10px;color:#333;letter-spacing:2px;font-size:26rpx;">
+    微信--添加好友--公众号--搜索前端er可以关注我
+  </view>
+  <view style="margin:10px;color:#333;letter-spacing:2px;font-size:26rpx;">
+    或者发现--搜一搜--前端er也可以找到
+  </view>
+</view>

@@ -1,0 +1,23 @@
+<view class="container">
+  <input placeholder="请输入要查询的英文单词" bindinput='wordInput' focus="true" confirm-type="done" />
+  <button class='gg-btn gg-btn-red' bindtap="btnClick"> 查询 </button>
+</view>
+
+<view class="text-container {{isShow?'show':'hide'}}">
+  <view class="textView">
+    <view>释义:</view>
+    <text>{{text}}</text>
+  </view>
+  <view class="senView">
+    <view>例句:</view>
+    <view class="senSen"  wx:for="{{senInfo}}">
+      <view class='senExam'>
+        {{item.first}}<text style='color:#f8899d;font-weight:bold;font-size:26rpx;'>{{item.word}}</text>{{item.last}}
+      </view>
+       <view class='senTrans'>
+        {{item.translation}}
+      </view>
+    </view>
+   
+  </view>
+</view>

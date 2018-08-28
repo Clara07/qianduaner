@@ -1,0 +1,160 @@
+/**app.wxss**/
+
+view{
+  font-family: MicroSoft Yahei;
+}
+text {
+  font-family: MicroSoft Yahei;
+  font-size: 24rpx;
+  color: #666;
+}
+
+input {
+  font-family: MicroSoft Yahei;
+}
+
+.h3 {
+  font-size: 36px;
+}
+
+.fixedText {
+  position: absolute;
+  top: 25%;
+  text-align: center;
+}
+
+.fixedShadowText {
+  text-shadow: 5px 6px 6px #999;
+}
+
+.gg-btn{
+  width:90px;
+font-size:26rpx;
+padding:10rpx 12rpx;
+line-height:45rpx;
+color:#fff;
+}
+.gg-btn-red{
+  background: #f8899d;
+  /* background-color: #f65f7c; */
+}
+
+.wxBtn-transparent {
+  background: rgba(255, 255, 255, 0.3);
+  color: #666;
+}
+
+.fixedBtn {
+  position: absolute;
+  bottom: 35%;
+  left: 226rpx;
+  padding: 0rpx 88rpx;
+}
+
+.ggwx-indexspan {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+
+.ggwx-indexspan .ggwx-indexspan-title {
+  margin-right: auto;
+  width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowarp;
+  margin-left: 8px;
+  color: #ff5252;
+  font-size: bold;
+}
+
+.ggwx-indexspan-title::before {
+  content: '●|';
+  color: #ff5252;
+  letter-spacing: 2px;
+  font-size: normal !important;
+  padding-right: 5px;
+}
+
+.ggwx-indexspan .ggwx-more text{
+ font-size: 10px;
+ color: #999;
+}
+.ggwx-news-container{
+padding:12px;
+border-bottom:1px dashed #e9e9e9;
+display:flex;
+width:100%;
+align-content:center;
+flex-direction:row;
+}
+.ggwx-news-item{
+
+}
+.ggwx-news-image{
+width:90px;
+height:60px;
+margin-right: 20px;
+}
+.ggwx-news-image image{
+  width: 90px;
+  height: 60px;
+}
+.ggwx-news-text{
+  margin-right:12px;
+  margin-left:5px;
+}
+.ggwx-news-text .ggwx-news-title{
+font-size:28rpx;
+font-weight:bold;
+color:#555;
+overflow:hidden; 
+text-overflow:ellipsis;
+display:-webkit-box; 
+-webkit-box-orient:vertical;
+-webkit-line-clamp:2; 
+}
+.ggwx-news-text .ggwx-news-stamp{
+
+}
+.ggwx-news-text .ggwx-news-stamp-span{
+  letter-spacing:1px;
+}
+/* 字体 */
+@font-face {
+  font-family: 'iconfont';  /* project id 799910 */
+  src: url('//at.alicdn.com/t/font_799910_k0dxfz78ba.eot');
+  src: url('//at.alicdn.com/t/font_799910_k0dxfz78ba.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_799910_k0dxfz78ba.woff') format('woff'),
+  url('//at.alicdn.com/t/font_799910_k0dxfz78ba.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_799910_k0dxfz78ba.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github:before { content: "\e601"; }
+
+.icon-dictionary02:before { content: "\e75d"; }
+
+.icon-csdn:before { content: "\e60d"; }
+
+.icon-kuaidi:before { content: "\e608"; }
+
+.icon-gitee:before { content: "\e666"; }
+
+.icon-gg-csdn:before { content: "\e620"; }
+
+.icon-kuaidi1:before { content: "\e606"; }
+
+.icon-kuaidi2:before { content: "\e600"; }
+
+.icon-dictionary01:before { content: "\e692"; }
+.icon-more:before { content: "\e69a"; }

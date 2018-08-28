@@ -1,0 +1,30 @@
+<view class='ggwx-map'>
+  <view class="ggwx-map-input">
+    <image src='../../images/icon/search_icon.png'></image>
+    <input bindinput="bindKeyInput" bindblur="bindBlurInput" placeholder="搜地点" value=""></input>
+  </view>
+  <view class="sugDataInfo {{isShowList?'showIt':'hideIt'}}">
+    <view class='sugDataInfoDetail'>
+      <block wx:for="{{sugDataList}}" wx:key="key">
+        <view data-name="{{item.name}}" bindtap='onLocTap' data-lat="{{item.location.lat}}" data-lng="{{item.location.lng}}">
+          <text>{{item.name}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class='ggwx-map-searchBtnGroup'>
+    <button type='default' class="ggwx-map-btn {{selectedState[0]?'ggwx-map-btnA':''}}'" bindtap='clickFood'>美食</button>
+    <button type='default' class="ggwx-map-btn {{selectedState[1]?'ggwx-map-btnA':''}}'" bindtap='clickHotel'>酒店</button>
+    <button type='default' class="ggwx-map-btn {{selectedState[2]?'ggwx-map-btnA':''}}'" bindtap='clickBank'>银行</button>
+    <button type='default' class=" ggwx-map-btn {{selectedState[3]?'ggwx-map-btnA':''}}'" bindtap='clickBus'>公交站</button>
+    <button type='default' class="ggwx-map-btn {{selectedState[4]?'ggwx-map-btnA':''}}'" bindtap='clickLife'>生活服务</button>
+  </view>
+  <view class="ggwx-map-container">
+    <map class="map {{isShowMap?'showIt':'hideIt'}}" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="16" show-location="true" markers="{{markers}}" bindmarkertap="makertap"></map>
+  </view>
+  <view class="ggwx-place-info {{isShow?'showIt':'hideIt'}}">
+    <text class='ggwx-place-title'>{{placeData.title}}</text>
+    <text class='ggwx-place-address'>{{placeData.address}}</text>
+    <text class='ggwx-place-tel'>{{placeData.telephone}}</text>
+  </view>
+</view>
