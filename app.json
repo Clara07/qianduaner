@@ -21,6 +21,11 @@
     "navigationBarTitleText": "Clara G",
     "navigationBarTextStyle": "black"
   },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
   "tabBar": {
     "selectedColor": "#f65f7c",
     "list": [
